@@ -205,7 +205,123 @@
 			"contactType": "Customer Service",
 			"areaServed": "IN",
 			"availableLanguage": ["English", "Malayalam"]
+		},
+		"memberOf": {
+			"@type": "Organization",
+			"name": "Hearing Aid Industry Kerala"
+		},
+		"knowsAbout": [
+			"Hearing Aids",
+			"Audiology",
+			"Otoplastic",
+			"Ear Molds",
+			"Hearing Loss",
+			"Custom Hearing Solutions",
+			"Ear Protection"
+		]
+	}
+	</script>
+	
+	<!-- Professional Service Schema for AI Understanding -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "ProfessionalService",
+		"name": "Prithvi Hearing Systems",
+		"provider": {
+			"@type": "MedicalBusiness",
+			"name": "Prithvi Hearing Systems",
+			"founder": {
+				"@type": "Person",
+				"name": "Sadheep Sivanandan",
+				"jobTitle": "Founder & Audiologist",
+				"knowsAbout": ["Hearing Aids", "Audiology", "Otoplastic Manufacturing", "Hearing Loss Treatment"],
+				"hasCredential": "20+ years of experience in hearing aid technology"
+			}
+		},
+		"serviceType": "Hearing Aid Services",
+		"description": "Comprehensive hearing aid solutions including BTE and ITE hearing aids, custom ear molds, and ear protection services in Kannur and Thalassery, Kerala.",
+		"areaServed": {
+			"@type": "State",
+			"name": "Kerala"
+		},
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "Hearing Aid Services Catalog",
+			"itemListElement": [
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"@id": "https://prithvihearingsystems.github.io/services.html#hearing-aids",
+						"name": "Hearing Aids",
+						"description": "Behind-the-Ear (BTE), In-the-Ear (ITE), and Receiver-in-Canal (RIC) hearing aids with advanced features including Bluetooth connectivity, rechargeability, noise reduction, directional microphones, and AI integration.",
+						"provider": {
+							"@type": "MedicalBusiness",
+							"name": "Prithvi Hearing Systems"
+						},
+						"serviceType": "Hearing Aid Fitting and Service",
+						"areaServed": ["Kannur", "Thalassery", "Kerala"]
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"@id": "https://prithvihearingsystems.github.io/services.html#otoplastic",
+						"name": "Custom Ear Molds and Otoplastic Products",
+						"description": "Custom silicone and acrylic ear molds manufactured in-house at our otoplastic lab. Specialized customization for BTE hearing instruments and unique ear canal requirements.",
+						"provider": {
+							"@type": "MedicalBusiness",
+							"name": "Prithvi Hearing Systems"
+						},
+						"serviceType": "Otoplastic Manufacturing",
+						"areaServed": ["Kannur", "Thalassery", "Kerala"]
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"@id": "https://prithvihearingsystems.github.io/services.html#protect",
+						"name": "Custom Ear Protection",
+						"description": "Customized ear plugs for water protection, noise reduction, and specialized medical needs. Recommended for swimmers, children with ear infections, patients with perforated eardrums, and athletes.",
+						"provider": {
+							"@type": "MedicalBusiness",
+							"name": "Prithvi Hearing Systems"
+						},
+						"serviceType": "Ear Protection Solutions",
+						"areaServed": ["Kannur", "Thalassery", "Kerala"]
+					}
+				}
+			]
 		}
+	}
+	</script>
+	
+	<!-- Person Schema for Founder (E-E-A-T) -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Sadheep Sivanandan",
+		"jobTitle": "Founder & Audiologist",
+		"worksFor": {
+			"@type": "MedicalBusiness",
+			"name": "Prithvi Hearing Systems",
+			"url": "https://prithvihearingsystems.github.io"
+		},
+		"knowsAbout": [
+			"Hearing Aids",
+			"Audiology",
+			"Otoplastic Manufacturing",
+			"Hearing Loss Treatment",
+			"Custom Ear Molds",
+			"Ear Protection",
+			"Hearing Aid Technology"
+		],
+		"description": "Founder of Prithvi Hearing Systems with over 20 years of experience in hearing aid technology, custom ear mold manufacturing, and audiology services in Kerala.",
+		"url": "https://prithvihearingsystems.github.io/about.html"
 	}
 	</script>
 </head>

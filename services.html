@@ -33,14 +33,69 @@
 		"@context": "https://schema.org",
 		"@type": "Service",
 		"serviceType": "Hearing Aid Services",
+		"name": "Hearing Aid Services - Prithvi Hearing Systems",
+		"description": "Comprehensive hearing aid services including BTE/ITE hearing aids, custom ear molds (otoplastic), and ear protection in Kannur & Thalassery, Kerala. Fast 2-day service turnaround.",
 		"provider": {
 			"@type": "MedicalBusiness",
 			"name": "Prithvi Hearing Systems",
-			"telephone": "+919846220012"
+			"telephone": "+919846220012",
+			"email": "prithvihearing@gmail.com",
+			"url": "https://prithvihearingsystems.github.io",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Safa Complex, 1st Floor, Nr. College of Commerce, Old Bus stand",
+				"addressLocality": "Kannur",
+				"addressRegion": "Kerala",
+				"postalCode": "670001",
+				"addressCountry": "IN"
+			}
 		},
-		"areaServed": {
-			"@type": "State",
-			"name": "Kerala"
+		"areaServed": [
+			{
+				"@type": "City",
+				"name": "Kannur"
+			},
+			{
+				"@type": "City",
+				"name": "Thalassery"
+			},
+			{
+				"@type": "State",
+				"name": "Kerala"
+			}
+		],
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "Hearing Aid Services",
+			"itemListElement": [
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Hearing Aids - BTE and ITE",
+						"description": "Behind-the-Ear (BTE) and In-the-Ear (ITE) hearing aids with rechargeable and Bluetooth options, noise reduction, directional microphones, and AI integration.",
+						"category": "Hearing Aid Devices"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Custom Ear Molds",
+						"description": "Custom silicone and acrylic ear molds manufactured in-house at our otoplastic lab for BTE hearing instruments.",
+						"category": "Otoplastic Products"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Ear Protection",
+						"description": "Custom ear plugs for swimmers, children with ear infections, patients with perforated eardrums, and athletes.",
+						"category": "Ear Protection Solutions"
+					}
+				}
+			]
 		}
 	}
 	</script>
