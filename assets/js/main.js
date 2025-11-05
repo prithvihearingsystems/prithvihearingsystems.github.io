@@ -55,6 +55,7 @@
 		clearTimeout(resizeTimer);
 		resizeTimer = setTimeout(function(){
 			renderHeader();
+			renderMobileBar();
 		}, 150);
 	});
 
@@ -84,6 +85,29 @@
 		a.setAttribute('rel', 'noopener noreferrer');
 		a.innerHTML = '<span class="wa-text">WhatsApp</span>';
 		document.body.appendChild(a);
+	}
+
+	function renderMobileBar(){
+		const isSmall = window.innerWidth <= 600;
+		let bar = document.querySelector('.mobile-action-bar');
+		if(isSmall) {
+			if(!bar){
+				bar = document.createElement('div');
+				bar.className = 'mobile-action-bar';
+				bar.innerHTML = [
+					'<div class="bar container">',
+					'<a class="call" href="', phoneHref(), '" aria-label="Call now">Call</a>',
+					'<a class="wa" href="', waHref('Hello! I would like to book a free hearing test.'), '" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>',
+					'<a class="book" href="/contact.html#book" aria-label="Book a free test">Book</a>',
+					'</div>'
+				].join('');
+				document.body.appendChild(bar);
+			}
+			document.body.classList.add('has-mobile-bar');
+		} else {
+			if(bar){ bar.remove(); }
+			document.body.classList.remove('has-mobile-bar');
+		}
 	}
 
 	function attachFormHandler(){
@@ -121,6 +145,7 @@
 		renderHeader();
 		renderFooter();
 		renderFloatingWA();
+		renderMobileBar();
 		attachFormHandler();
 		analytics();
 	});
