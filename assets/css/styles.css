@@ -55,6 +55,15 @@ img {
 	object-fit: cover;
 }
 
+/* Gallery images used in mobile-first horizontal gallery */
+.gallery-image {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	border-radius: var(--radius-lg);
+}
+
 /* Ensure images maintain aspect ratio and don't overflow on mobile */
 @media (max-width: 900px) {
 	img {
@@ -503,6 +512,10 @@ a {
 	line-height: 1.6;
 	box-shadow: var(--shadow-sm);
 	position: relative;
+}
+
+.testimonial .content {
+	color: var(--text-light);
 }
 
 .testimonial::before {
@@ -1063,6 +1076,14 @@ label {
 		padding: 20px;
 		font-size: 14px;
 		line-height: 1.6;
+	}
+
+	/* Trim long testimonials on phones while keeping names visible */
+	.testimonial .content {
+		display: -webkit-box;
+		-webkit-line-clamp: 6;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
 	
 	.testimonial::before {
